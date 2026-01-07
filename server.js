@@ -1,8 +1,10 @@
 import 'dotenv/config';
 import express from 'express';
+import cors from 'cors';
 import v1QuoteRouter from './src/routes/v1/quoteRoutes.js';
 
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT;
 
 app.get('/', (req, res) => {
