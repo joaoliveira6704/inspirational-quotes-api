@@ -1,0 +1,30 @@
+{
+  "name": "inspirational-quotes-api",
+  "version": "1.0.0",
+  "description": "Inspirational Quotes API in express. Filter by category.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --env-file=.env.example src/index.js",
+    "test:docs": "swagger-cli validate ./src/docs/swagger.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaoliveira6704/inspirational-quotes-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/joaoliveira6704/inspirational-quotes-api/issues"
+  },
+  "homepage": "https://github.com/joaoliveira6704/inspirational-quotes-api#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Inspirational Quotes API",
+    "version": "1.0.0",
+    "description": "A specialized API for managing inspirational quotes categorized by themes."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/api/v1",
+      "description": "Local Development Server"
+    }
+  ],
+  "paths": {
+    "/quotes": {
+      "get": {
+        "summary": "Get all inspirational quotes",
+        "tags": ["Quotes"],
+        "responses": {
+          "200": {
+            "description": "A list of quotes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Quote" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add a new inspirational quote",
+        "tags": ["Quotes"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/QuoteInput" }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Quote created successfully",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Quote" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quotes/{quoteId}": {
+      "get": {
+        "summary": "Get a specific quote by ID",
+        "tags": ["Quotes"],
+        "parameters": [
+          {
+            "name": "quoteId",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote details",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Quote" }
+              }
+            }
+          },
+          "404": { "description": "Quote not found" }
+        }
+      },
+      "patch": {
+        "summary": "Update quote message or categories",
+        "tags": ["Quotes"],
+        "parameters": [
+          {
+            "name": "quoteId",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/QuoteInput" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Update successful" }
+        }
+      },
+      "delete": {
+        "summary": "Remove a quote",
+        "tags": ["Quotes"],
+        "parameters": [
+          {
+            "name": "quoteId",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "204": { "description": "Deleted successfully" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Quote": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "example": "q_12345" },
+          "message": {
+            "type": "string",
+            "example": "Believe you can and you're halfway there."
+          },
+          "author": { "type": "string", "example": "Theodore Roosevelt" },
+          "categories": {
+            "type": "array",
+            "items": { "type": "string" },
+            "example": ["Inspiration", "Motivation", "Financial"]
+          },
+          "createdAt": { "type": "string", "format": "date-time" }
+        }
+      },
+      "QuoteInput": {
+        "type": "object",
+        "required": ["message", "author"],
+        "properties": {
+          "message": { "type": "string" },
+          "author": { "type": "string" },
+          "categories": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": ["General"]
+          }
+        }
+      }
+    }
+  }
+}
