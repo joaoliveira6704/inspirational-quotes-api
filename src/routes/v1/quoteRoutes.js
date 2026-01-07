@@ -1,24 +1,24 @@
-const express = require("express");
+import express from 'express';
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Get All Quotes");
+router.get('/', (req, res) => {
+  res.send('Get All Quotes');
 });
 
-router.get("/:quoteId", (req, res) => {
-  res.send("Get an existing quote");
+router.get('/:quoteId', (req, res) => {
+  res.send('Get an existing quote');
 });
 
-router.post("/", (req, res) => {
-  res.send("Create a new quote");
+router.post('/', (req, res) => {
+  res.send('Create a new quote');
 });
 
-router.patch("/:quoteId", (req, res) => {
-  res.send("Update an existing quote");
+router.patch('/:quoteId', (req, res) => {
+  res.send('Update an existing quote');
 });
 
-router.delete("/:quoteId", (req, res) => {
-  res.send("Delete an existing quote");
+router.delete('/:quoteId', (req, res) => {
+  res.send('Delete an existing quote');
 });
 
-module.exports = router;
+export default router;

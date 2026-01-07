@@ -1,9 +1,12 @@
-require('dotenv').config();
-const express = require('express');
-const v1QuoteRouter = require('./routes/v1/quoteRoutes');
-const swaggerUi = require('swagger-ui-express');
-const path = require('path');
-const swaggerDocument = require(path.join(__dirname, '../docs/swagger.json'));
+import 'dotenv/config';
+import express from 'express';
+import v1QuoteRouter from './routes/v1/quoteRoutes.js';
+import swaggerUi from 'swagger-ui-express';
+import { createRequire } from 'module';
+
+// JSON imports require a special trick in ESM or using createRequire
+const require = createRequire(import.meta.url);
+const swaggerDocument = require('../docs/swagger.json');
 
 const app = express();
 const PORT = process.env.PORT;
