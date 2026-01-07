@@ -2,38 +2,318 @@
   "quotes": [
     {
       "id": "1",
-      "message": "The only way to do great work is to love what you do.",
+      "message": "A única forma de fazeres um excelente trabalho é amares o que fazes.",
       "author": "Steve Jobs",
-      "categories": ["Motivation", "Work"],
+      "categories": ["Motivation", "Work", "Momentum"],
       "createdAt": "2026-01-01T10:00:00Z"
     },
     {
       "id": "2",
-      "message": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "message": "O sucesso não é final, o fracasso não é fatal: o que conta é a coragem para continuar.",
       "author": "Winston Churchill",
-      "categories": ["Success", "Persistence"],
+      "categories": ["Motivation", "Persistence", "Boost"],
       "createdAt": "2026-01-02T12:30:00Z"
     },
     {
       "id": "3",
-      "message": "Believe you can and you're halfway there.",
+      "message": "Acredita que consegues e já estás a meio do caminho.",
       "author": "Theodore Roosevelt",
-      "categories": ["Inspiration", "Self-Confidence"],
+      "categories": ["Motivation", "Inspiration", "Boost"],
       "createdAt": "2026-01-05T09:15:00Z"
     },
     {
       "id": "4",
-      "message": "Your time is limited, so don't waste it living someone else's life.",
+      "message": "O teu tempo é limitado, por isso não o desperdices a viver a vida de outra pessoa.",
       "author": "Steve Jobs",
-      "categories": ["Life", "Inspiration"],
+      "categories": ["Motivation", "Life", "Momentum"],
       "createdAt": "2026-01-07T15:45:00Z"
     },
     {
       "id": "5",
-      "message": "It always seems impossible until it's done.",
+      "message": "Parece sempre impossível até estar feito.",
       "author": "Nelson Mandela",
-      "categories": ["Motivation", "Persistence"],
+      "categories": ["Motivation", "Persistence", "Boost"],
       "createdAt": "2026-01-07T21:00:00Z"
+    },
+    {
+      "id": "6",
+      "message": "Não contes os dias, faz os dias contarem.",
+      "author": "Muhammad Ali",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-07T22:00:00Z"
+    },
+    {
+      "id": "7",
+      "message": "Cai sete vezes, levanta-te oito.",
+      "author": "Provérbio Japonês",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T22:05:00Z"
+    },
+    {
+      "id": "8",
+      "message": "A melhor altura para plantar uma árvore foi há 20 anos. A segunda melhor altura é agora.",
+      "author": "Provérbio Chinês",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T22:10:00Z"
+    },
+    {
+      "id": "9",
+      "message": "O sucesso é caminhares de fracasso em fracasso sem perderes o entusiasmo.",
+      "author": "Winston Churchill",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T22:15:00Z"
+    },
+    {
+      "id": "10",
+      "message": "A disciplina é a ponte entre os objetivos e as conquistas.",
+      "author": "Jim Rohn",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-07T22:20:00Z"
+    },
+    {
+      "id": "11",
+      "message": "O que fazes hoje pode melhorar todos os teus amanhãs.",
+      "author": "Ralph Marston",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-07T22:25:00Z"
+    },
+    {
+      "id": "12",
+      "message": "Age como se o que fazes fizesse a diferença. Porque faz.",
+      "author": "William James",
+      "categories": ["Motivation", "Inspiration", "Momentum"],
+      "createdAt": "2026-01-07T22:30:00Z"
+    },
+    {
+      "id": "13",
+      "message": "A tua única limitação é a tua imaginação.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T22:35:00Z"
+    },
+    {
+      "id": "14",
+      "message": "Às vezes ganhas, às vezes aprendes.",
+      "author": "John Maxwell",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T22:40:00Z"
+    },
+    {
+      "id": "15",
+      "message": "Não esperes por oportunidades. Cria-as.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-07T22:45:00Z"
+    },
+    {
+      "id": "16",
+      "message": "A motivação é o que te faz começar. O hábito é o que te faz continuar.",
+      "author": "Jim Ryun",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-07T22:50:00Z"
+    },
+    {
+      "id": "17",
+      "message": "Pequenos passos na direção certa podem tornar-se no maior passo da tua vida.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T22:55:00Z"
+    },
+    {
+      "id": "18",
+      "message": "Dificuldades preparam pessoas comuns para destinos extraordinários.",
+      "author": "C.S. Lewis",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T23:00:00Z"
+    },
+    {
+      "id": "19",
+      "message": "Tudo o que sempre quiseste está do outro lado do medo.",
+      "author": "George Addair",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T23:05:00Z"
+    },
+    {
+      "id": "20",
+      "message": "Não pares quando estiveres cansado. Para quando tiveres terminado.",
+      "author": "David Goggins",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-07T23:10:00Z"
+    },
+    {
+      "id": "21",
+      "message": "A excelência não é um ato, mas um hábito.",
+      "author": "Aristóteles",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-07T23:15:00Z"
+    },
+    {
+      "id": "22",
+      "message": "Se queres ir rápido, vai sozinho. Se queres ir longe, vai acompanhado.",
+      "author": "Provérbio Africano",
+      "categories": ["Motivation", "Teamwork", "Momentum"],
+      "createdAt": "2026-01-07T23:20:00Z"
+    },
+    {
+      "id": "23",
+      "message": "Não deixes que o ontem ocupe muito do dia de hoje.",
+      "author": "Will Rogers",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T23:25:00Z"
+    },
+    {
+      "id": "24",
+      "message": "Nós tornamo-nos naquilo em que pensamos a maior parte do tempo.",
+      "author": "Earl Nightingale",
+      "categories": ["Motivation", "Mindset", "Momentum"],
+      "createdAt": "2026-01-07T23:30:00Z"
+    },
+    {
+      "id": "25",
+      "message": "Quer aches que consegues ou que não consegues, estás certo.",
+      "author": "Henry Ford",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T23:35:00Z"
+    },
+    {
+      "id": "26",
+      "message": "A única pessoa que estás destinado a ser é a pessoa que decidires ser.",
+      "author": "Ralph Waldo Emerson",
+      "categories": ["Motivation", "Inspiration"],
+      "createdAt": "2026-01-07T23:40:00Z"
+    },
+    {
+      "id": "27",
+      "message": "Começa onde estás. Usa o que tens. Faz o que podes.",
+      "author": "Arthur Ashe",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T23:45:00Z"
+    },
+    {
+      "id": "28",
+      "message": "A felicidade não é algo pronto. Ela vem das tuas próprias ações.",
+      "author": "Dalai Lama",
+      "categories": ["Motivation", "Happiness"],
+      "createdAt": "2026-01-07T23:50:00Z"
+    },
+    {
+      "id": "29",
+      "message": "Se estás a passar pelo inferno, continua a caminhar.",
+      "author": "Winston Churchill",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-07T23:55:00Z"
+    },
+    {
+      "id": "30",
+      "message": "O génio é 1% inspiração e 99% transpiração.",
+      "author": "Thomas Edison",
+      "categories": ["Motivation", "Work", "Momentum"],
+      "createdAt": "2026-01-08T00:00:00Z"
+    },
+    {
+      "id": "31",
+      "message": "Os limites, tal como os medos, são muitas vezes apenas uma ilusão.",
+      "author": "Michael Jordan",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-08T00:05:00Z"
+    },
+    {
+      "id": "32",
+      "message": "Acredita em ti próprio e o resto virá naturalmente.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T00:10:00Z"
+    },
+    {
+      "id": "33",
+      "message": "O insucesso é apenas a oportunidade de começar de novo com mais inteligência.",
+      "author": "Henry Ford",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T00:15:00Z"
+    },
+    {
+      "id": "34",
+      "message": "Foca-te no objetivo, não nos obstáculos.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-08T00:20:00Z"
+    },
+    {
+      "id": "35",
+      "message": "Sonha grande e atreve-te a falhar.",
+      "author": "Norman Vaughan",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T00:25:00Z"
+    },
+    {
+      "id": "36",
+      "message": "O que não nos mata, torna-nos mais fortes.",
+      "author": "Friedrich Nietzsche",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T00:30:00Z"
+    },
+    {
+      "id": "37",
+      "message": "A melhor vingança é um sucesso massivo.",
+      "author": "Frank Sinatra",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-08T00:35:00Z"
+    },
+    {
+      "id": "38",
+      "message": "Não precisas de ver toda a escada, apenas de dar o primeiro passo.",
+      "author": "Martin Luther King Jr.",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T00:40:00Z"
+    },
+    {
+      "id": "39",
+      "message": "A vida é 10% o que te acontece e 90% como reages a isso.",
+      "author": "Charles R. Swindoll",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T00:45:00Z"
+    },
+    {
+      "id": "40",
+      "message": "Para seres o melhor, tens de lidar com o pior.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T00:50:00Z"
+    },
+    {
+      "id": "41",
+      "message": "A consistência é o que transforma a média em excelência.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-08T00:55:00Z"
+    },
+    {
+      "id": "42",
+      "message": "Grandes coisas nunca vêm de zonas de conforto.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-08T01:00:00Z"
+    },
+    {
+      "id": "43",
+      "message": "O segredo para ficar à frente é começar.",
+      "author": "Mark Twain",
+      "categories": ["Motivation", "Momentum"],
+      "createdAt": "2026-01-08T01:05:00Z"
+    },
+    {
+      "id": "44",
+      "message": "Não esperes. O tempo nunca será o 'ideal'.",
+      "author": "Napoleon Hill",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T01:10:00Z"
+    },
+    {
+      "id": "45",
+      "message": "Tu és mais forte do que imaginas.",
+      "author": "Anónimo",
+      "categories": ["Motivation", "Boost"],
+      "createdAt": "2026-01-08T01:15:00Z"
     }
   ]
 }
