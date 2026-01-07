@@ -6,7 +6,7 @@ import v1QuoteRouter from './src/routes/v1/quoteRoutes.js';
 const app = express();
 app.use(cors());
 const PORT = process.env.PORT;
-
+app.options('*', cors());
 app.get('/', (req, res) => {
   res.send('Quotes API online');
 });
