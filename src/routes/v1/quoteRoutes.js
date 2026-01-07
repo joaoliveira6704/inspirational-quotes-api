@@ -1,9 +1,8 @@
 import express from 'express';
 const router = express.Router();
+import * as quoteController from '../../controllers/quoteController.js';
 
-router.get('/', (req, res) => {
-  res.send('Get All Quotes');
-});
+router.get('/', quoteController.getAllQuotes);
 
 router.get('/:quoteId', (req, res) => {
   res.send('Get an existing quote');
