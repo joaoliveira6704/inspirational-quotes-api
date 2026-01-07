@@ -4,7 +4,7 @@
   "description": "Inspirational Quotes API in express. Filter by category.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node src/index.js",
     "dev": "nodemon --env-file=.vercel/.env.development.local src/index.js",
     "test:docs": "swagger-cli validate ./src/docs/swagger.json"
   },
@@ -16,6 +16,9 @@
   "author": "",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "bugs": {
     "url": "https://github.com/joaoliveira6704/inspirational-quotes-api/issues"
   },
