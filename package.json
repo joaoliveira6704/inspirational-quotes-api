@@ -17,7 +17,7 @@
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": "24.x"
+    "node": ">=24.x"
   },
   "bugs": {
     "url": "https://github.com/joaoliveira6704/inspirational-quotes-api/issues"
