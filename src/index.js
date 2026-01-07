@@ -1,25 +1,26 @@
 import 'dotenv/config';
 import express from 'express';
-import v1QuoteRouter from './routes/v1/quoteRoutes.js';
-import swaggerUi from 'swagger-ui-express';
-import { createRequire } from 'module';
+import v1QuoteRouter from './src/routes/v1/quoteRoutes.js';
+/* import swaggerUi from 'swagger-ui-express';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-// JSON imports require a special trick in ESM or using createRequire
-const require = createRequire(import.meta.url);
-const swaggerDocument = require('../docs/swagger.json');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
+// Read swagger.json directly
+const swaggerDocument = JSON.parse(
+  readFileSync(join(__dirname, './docs/swagger.json'), 'utf-8')
+);
+ */
 const app = express();
-const PORT = process.env.PORT;
 
 app.get('/', (req, res) => {
   res.send('Quotes API online');
 });
 
 app.use('/api/v1/quotes', v1QuoteRouter);
+/* app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)); */
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => console.log(`Listening on ${PORT}`));
-}
 export default app;
