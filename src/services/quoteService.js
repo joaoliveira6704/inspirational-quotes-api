@@ -1,4 +1,5 @@
 import * as Quote from '../database/Quote.js';
+import { getRandomNumber } from '../utils/utils.js';
 
 export const getAllQuotes = (filterParams) => {
   try {
@@ -16,7 +17,9 @@ export const getAllQuotes = (filterParams) => {
       });
     }
 
-    return allQuotes;
+    let randomQuoteIndex = getRandomNumber(allQuotes.length);
+
+    return allQuotes[randomQuoteIndex];
   } catch (error) {
     throw error;
   }
