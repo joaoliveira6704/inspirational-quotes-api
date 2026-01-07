@@ -4,6 +4,7 @@
   "description": "Inspirational Quotes API in express. Filter by category.",
   "main": "index.js",
   "scripts": {
+    "start": "node src/server.js",
     "dev": "nodemon --env-file=.env.example src/index.js",
     "test:docs": "swagger-cli validate ./src/docs/swagger.json"
   },

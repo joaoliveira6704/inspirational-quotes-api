@@ -1,0 +1,39 @@
+{
+  "quotes": [
+    {
+      "id": "1",
+      "message": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs",
+      "categories": ["Motivation", "Work"],
+      "createdAt": "2026-01-01T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "message": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "categories": ["Success", "Persistence"],
+      "createdAt": "2026-01-02T12:30:00Z"
+    },
+    {
+      "id": "3",
+      "message": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt",
+      "categories": ["Inspiration", "Self-Confidence"],
+      "createdAt": "2026-01-05T09:15:00Z"
+    },
+    {
+      "id": "4",
+      "message": "Your time is limited, so don't waste it living someone else's life.",
+      "author": "Steve Jobs",
+      "categories": ["Life", "Inspiration"],
+      "createdAt": "2026-01-07T15:45:00Z"
+    },
+    {
+      "id": "5",
+      "message": "It always seems impossible until it's done.",
+      "author": "Nelson Mandela",
+      "categories": ["Motivation", "Persistence"],
+      "createdAt": "2026-01-07T21:00:00Z"
+    }
+  ]
+}
