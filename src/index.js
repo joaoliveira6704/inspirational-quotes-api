@@ -19,4 +19,4 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 }
-module.exports = app;
+export default app;
