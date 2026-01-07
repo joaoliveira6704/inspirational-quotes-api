@@ -1,14 +1,15 @@
 import * as quoteService from '../services/quoteService.js';
 
 export const getAllQuotes = (req, res) => {
-  const { category } = req.query;
+  // Extract filters from query strng
+  const { category, random } = req.query;
 
   try {
-    const allQuotes = quoteService.getAllQuotes({ category });
+    // Send object with both filters
+    const allQuotes = quoteService.getAllQuotes({ category, random });
+
     res.send({ status: 'OK', data: allQuotes });
   } catch (error) {
-    res
-      .status(error?.status || 500)
-      .send({ status: 'FAILED', data: { error: error?.message || error } });
+    res.status(500).send({ status: 'FAILED', data: { error: error?.message } });
   }
 };
