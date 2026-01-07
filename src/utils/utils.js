@@ -1,3 +1,4 @@
-export function getRandomNumber(arrayLength) {
-  return Math.floor(Math.random() * arrayLength);
-}
+// src/utils/utils.js
+export const getRandomNumber = (max) => {
+  return Math.floor(Math.random() * max);
+};

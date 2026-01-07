@@ -6,20 +6,22 @@ export const getAllQuotes = (filterParams) => {
     let allQuotes = Quote.getAllQuotes();
 
     if (filterParams.category) {
-      // Convert string into array (split by comma)
       const targetCategories = filterParams.category.toLowerCase().split(',');
 
-      return allQuotes.filter((quote) => {
+      allQuotes = allQuotes.filter((quote) => {
         const quoteCats = quote.categories.map((cat) => cat.toLowerCase());
 
-        // Returns true only if every target category is present in the quote
         return targetCategories.every((cat) => quoteCats.includes(cat));
       });
     }
 
-    let randomQuoteIndex = getRandomNumber(allQuotes.length);
+    // If user asks for random using flag ?random=true
+    if (filterParams.random === 'true' && allQuotes.length > 0) {
+      const randomIndex = getRandomNumber(allQuotes.length);
+      return [allQuotes[randomIndex]];
+    }
 
-    return allQuotes[randomQuoteIndex];
+    return allQuotes;
   } catch (error) {
     throw error;
   }
