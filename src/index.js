@@ -2,7 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const v1QuoteRouter = require('./routes/v1/quoteRoutes');
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('../docs/swagger.json');
+const path = require('path');
+const swaggerDocument = require(path.join(__dirname, '../docs/swagger.json'));
 
 const app = express();
 const PORT = process.env.PORT;
