@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import express from 'express';
-import v1QuoteRouter from './routes/v1/quoteRoutes.js';
+import v1QuoteRouter from './src/routes/v1/quoteRoutes.js';
 
 const app = express();
 

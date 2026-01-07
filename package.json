@@ -2,10 +2,10 @@
   "name": "inspirational-quotes-api",
   "version": "1.0.0",
   "description": "Inspirational Quotes API in express. Filter by category.",
-  "main": "src/index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon --env-file=.vercel/.env.development.local src/index.js",
+    "start": "node server.js",
+    "dev": "nodemon --env-file=.vercel/.env.development.local server.js",
     "test:docs": "swagger-cli validate ./src/docs/swagger.json"
   },
   "repository": {
